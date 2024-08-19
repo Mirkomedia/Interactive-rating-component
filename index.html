@@ -16,53 +16,45 @@
 </head>
 <body>
  
+   
   <!-- Rating state start -->
-  <div class="container">
+  <div class="container" id="hdwd">
     <div class="star-background">
-      <img id="star" src="images\icon-star.svg">
+      <img id="star" alt="star-icon" src="images\icon-star.svg">
      </div>
 <h1> How did we do?</h1>
  
 
   <p>Please let us know how we did with your support request. All feedback is appreciated 
   to help us improve our offering!</p>
-  <form class="rating" action="https://mirkomedia.github.io/" method="post" id="rating">
- <button class="round-btn" name="btn-1" id="btn-1" value="1" >1</button> 
- <button class="round-btn" name="btn-2" id="btn-2" value="2">2</button>
- <button class="round-btn" name="btn-3" id="btn-3" value="3">3</button>
- <button class="round-btn" name="btn-4" id="btn-4" value="4">4</button>
- <button class="round-btn" name="btn-5" id="btn-5" value="5">5</button>
+
+    
+
+ <button  class="round-btn" name="btn-1" data-value="1"  >1</button>
+ <button  class="round-btn" name="btn-2" data-value="2"  >2</button>
+ <button  class="round-btn" name="btn-3" data-value="3"  >3</button>
+ <button  class="round-btn" name="btn-4" data-value="4"  >4</button>
+ <button  class="round-btn" name="btn-5" data-value="5"  >5</button>
 
  <br>
  <br>
 
-  <button type="submit" name="submit-btn" id="submit-btn">SUBMIT</button>
-
-</form>
+  <button type="submit" class="submit-btn" id="submit-btn" >SUBMIT</button>
+  
+  <div hidden class="thank-you"  id="thank-you" >
+    <img src="images/illustration-thank-you.svg" alt="thank-you" id="thanks">
+    <div class="rating-msg-background">
+      <p class="rate-amount"> You selected <span class="rating-display rate-amount">none</span> out of 5</p>
+    </div>
+      <h1>  Thank you!</h1>
+    <p> We appreciate you taking the time to give a rating. If you ever need more support, 
+      don’t hesitate to get in touch!</p>
+  </div>
 </div>
-  <!-- Rating state end -->
 
-  <!-- Thank you state start -->
-<div hidden class="container" class="thank-you" >
-  <img src="images/illustration-thank-you.svg">
-  <p id="rateAmout"> You selected <!-- Add rating here --> out of 5</p>
-  <h1>  Thank you!</h1>
-  <p> We appreciate you taking the time to give a rating. If you ever need more support, 
-    don’t hesitate to get in touch!</p>
-</div>
- 
-
-
-
- 
-
-  <!-- Thank you state end -->
 
   
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
-  </div>
+
   <script src="/app.js"></script>
 </body>
 </html>
